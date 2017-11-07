@@ -1,5 +1,6 @@
 #!/bin/bash
 projects=(
+    "sunshower-env"
 	"gradle-plugins"
 	"arcus" 
 	"maelstrom"
