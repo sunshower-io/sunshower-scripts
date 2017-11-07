@@ -5,7 +5,7 @@ projects=(
 	"maelstrom"
 	"barometer" 
 	"sunshower-env" 
-        "sunshower-test"
+    "sunshower-test"
 	"sunshower-schemata" 
 	"sunshower-common" 
 	"sunshower-persist" 
@@ -18,8 +18,7 @@ projects=(
 )
 for i in "${projects[@]}"
 do
-    #cd ../ && cd "$i" && mvn clean install -f bom && gradle clean build pTML idea
-    cd ../
-    git clone git@github.com:sunshower-io/$i
-
+    cd ../ && cd "$i"
+    git checkout master
+    git pull
 done;
